@@ -13,7 +13,6 @@ header {
     justify-content: space-around;
     background-color: white;
     z-index: 10;
-
 }
 .fantasma {
     height: 13vh;
@@ -23,8 +22,7 @@ h1 {
 }
 nav {
     width: 30vw;
-    margin-top: 5.5vh;
-    
+    margin-top: 5.5vh;  
 }
 li {
     margin-left: 0.5rem;
@@ -57,7 +55,7 @@ li:hover{
     font-size: 2.188rem;
     font-weight: lighter;
 }
-.textom :hover {
+.textom:hover {
     cursor: pointer;
 }
 .caixa-img {
