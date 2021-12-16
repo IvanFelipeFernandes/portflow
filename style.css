@@ -5,13 +5,16 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+.menu-celular {
+    display: none;
+}
 header {
     position: fixed;
     display: flex;
     width: 100%;
     height: 13vh;
     justify-content: space-around;
-    background-color: white;
+    background-color:#FFFFFF;
     z-index: 10;
 }
 .fantasma {
@@ -39,7 +42,7 @@ li:hover{
 .laranja {
     background-image: url(assets/laranja\ azul\ recorte.png);
     height: 79.2vh;
-    color: white;
+    color: #FFFFFF;
 }
 .textog {
     position: absolute;
@@ -74,7 +77,7 @@ li:hover{
 .caixa-final {
     position: relative;
     height: 13vh;
-    background-color: rgb(245, 240, 240);
+    background-color: #F5F5F5;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -94,4 +97,104 @@ li:hover{
     justify-content: space-evenly;
     align-items: center;
     margin-right: 2rem;
+}
+button {
+    display: none;
+}
+@media (max-width:411px) {
+    nav {
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content:left;
+        align-items: center;
+        width: 25.688rem;
+        height: 1.688rem;
+    }
+    h1 {
+        font-size: 1.125rem;
+        margin-top: 1%;
+        margin-left: 10%;
+    }
+    .menu-celular {
+        display: block;
+        width:8rem;
+        height: 1.68rem;
+        background-color: #000000;
+        position: relative;
+    }
+    .linhas {
+        width: 1.125rem;
+        position: absolute;
+        left: 43%;
+        top: 25%;
+    }
+    .fantasma {
+        height: 1.68rem;
+    }
+    .laranja {
+        background-position: 83%;
+        width: 25.688rem;
+        height: 40rem;
+    }
+    .textog {
+        font-size: 3.125rem;
+        position: absolute;
+        top: 27rem;
+    }
+    .textom {
+        font-size: 1.125rem;
+        position: absolute;
+        top: 38.5rem;
+    }
+    .caixa-img {
+        gap: 1rem;
+    }
+    .caixa-img img{
+        width: 18.75rem;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .caixa-final {
+        width: 100%;
+        height: 8.5rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+    }
+    .redes-sociais {
+        width: 18.75rem;
+        height: 2.563rem;
+        background-color: #7FDBD4;
+        align-items: center;
+    }
+    .redes-sociais img {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    h3 {
+        padding-right: 100%;
+    }
+    .texto-final {
+        font-size: 0.625rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .referencia {
+        display: inline-flex;
+    }
+    .direitos {
+        width: 12.188rem;
+        height: 4.063rem;
+    }
+    button {
+        display: block;
+        width: 4.25rem;
+        height: 1.563rem;
+        color: #CCCCCC;
+        background-color: #333333;
+    }
 }
